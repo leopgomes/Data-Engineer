@@ -1,15 +1,10 @@
-# Data-Engineer-Projects
-Descrição:
+### Descrição:
+ * Nesse projeto, foi desenvolvido um script em Python para conectar com a API da Iugu para buscar registros de assinaturas realizadas on-line para posterior integração com o sistema de ERP da empresa.
+ * Foi realizada uma conexão via GET utilizando o padrão **Rest** utilizando alguns parâmetros para conexão
 
-    Micro Serviço: User Service fará um pedido via requisição HTTP com metodo POST para o micro serviço Order Service onde será armazenado na base de dados Postgres, onde o Order Service recebera o pedido via Mensageria onde o RabbitMQ recebera na Exchange padrão Fanout do próprio RabbitMQ pois como é um projeto simples não vi necessidade de criar um filtro, por sua vez os micro serviços que estiverem conectados nessa exchange recebera a mensagem na qual será os micro serviços: Order Service e Notification Service e o User Service recera uma mensagem dizendo que o pedido foi feito.
 
-Tecnologias e Ferramentas Usadas:
+### Tecnologias e Ferramentas Usadas:
+ * **REST**: para sistemas distribuídos, que utiliza o protocolo HTTP para comunicação, com operações baseadas em recursos identificados por URLs e métodos HTTP (GET, POST, PUT, DELETE), promovendo uma interface uniforme e orientada a recursos
+ * **Python**: linguagem de programação para automatização do processo.
+ * **Google Colab**: para escrita do código python
 
-    Spring: DevTools, Amqp, Actuator, Jpa, Web, Postgres.
-    RabbitMQ: para mensagerias entre micro serviço, versão 3.7.
-    Docker: para criar containes do RabbitMQ e Postgres facilitando o gerenciamento do ambiente.
-    Eclipse: para desenvolvimento dos código.
-    Postman: para testar requisições HTTP.
-    GitHub: Utilizado para armazenar os repositórios do projeto, facilitando o versionamento e colaboração.
-
-Padrões e Conceitos Usados:
